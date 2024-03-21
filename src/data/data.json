@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "title": "Widget",
+    "price": 19.99,
+    "description": "A high-quality widget designed for various purposes."
+  },
+  {
+    "id": "2",
+    "title": "Gizmo",
+    "price": 29.99,
+    "description": "A versatile gizmo with advanced features."
+  },
+  {
+    "id": "3",
+    "title": "Thingamajig",
+    "price": 14.99,
+    "description": "An innovative thingamajig suitable for all ages."
+  },
+  {
+    "id": "4",
+    "title": "Doohickey",
+    "price": 24.99,
+    "description": "A reliable doohickey engineered for durability."
+  },
+  {
+    "id": "5",
+    "title": "Doodad",
+    "price": 9.99,
+    "description": "A compact doodad perfect for everyday use."
+  },
+  {
+    "id": "6",
+    "title": "Whatchamacallit",
+    "price": 34.99,
+    "description": "A futuristic whatchamacallit with cutting-edge technology."
+  },
+  {
+    "id": "7",
+    "title": "Thingummy",
+    "price": 27.99,
+    "description": "A sleek thingummy designed for style and performance."
+  },
+  {
+    "id": "8",
+    "title": "Contraption",
+    "price": 39.99,
+    "description": "A complex contraption engineered for efficiency."
+  },
+  {
+    "id": "9",
+    "title": "Gadget",
+    "price": 16.99,
+    "description": "An essential gadget for modern living."
+  },
+  {
+    "id": "10",
+    "title": "Gubbins",
+    "price": 12.99,
+    "description": "A handy gubbins with multiple uses."
+  }
+]

@@ -3,18 +3,18 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link, graphql, useStaticQuery } from "gatsby";
 import React from "react";
-const Navigation = () => {
+const Navigation = (props) => {
   //Static query - use in components, you cannot use query variables unlike in page queries. You can only use it once inside a component
   const data = useStaticQuery(graphql`
-    query MyQuery {
+    {
       site {
         siteMetadata {
           title
-          description
         }
       }
     }
   `);
+  console.log(data);
 
   const { title } = data.site.siteMetadata;
   return (
@@ -29,7 +29,7 @@ const Navigation = () => {
             About
           </Nav.Link>
           <Nav.Link as={Link} to="/projects" className="text-light">
-            Projects
+            Products
           </Nav.Link>
         </Nav>
       </Container>

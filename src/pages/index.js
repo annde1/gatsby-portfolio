@@ -1,10 +1,15 @@
 import * as React from "react";
 import Layout from "../components/Layout";
 import Button from "react-bootstrap/Button";
+import { graphql } from "gatsby";
+import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
+import Container from "react-bootstrap/Container";
 
-export default function Home() {
+export default function Home(props) {
+  const image = getImage(props.data.file);
+  console.log(image);
   return (
-    <div>
+    <Container fluid>
       <Layout>
         <div
           style={{
@@ -32,9 +37,22 @@ export default function Home() {
               My Portfolio Projects
             </Button>
           </div>
-          <img src="/banner.png" alt="banner" style={{ maxWidth: "40%" }} />
+          <GatsbyImage image={image} alt="banner" />
         </div>
       </Layout>
-    </div>
+    </Container>
   );
 }
+export const query = graphql`
+  query MyQuery {
+    file(relativePath: { eq: "banner.png" }) {
+      childImageSharp {
+        gatsbyImageData(
+          width: 400
+          placeholder: BLURRED
+          formats: [AUTO, WEBP, AVIF]
+        )
+      }
+    }
+  }
+`;
